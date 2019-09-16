@@ -164,6 +164,6 @@ else:
 
 env.Append(CPPPATH=["SDL2-2.0.3/include"])
 
-env.Append(CPPPATH=["../../src"])
+env.Append(CPPPATH=["../../common"])
 env.Append(LIBS=[libsdl])
 env.SharedLibrary("neon_sdl", "sdl.cpp")
