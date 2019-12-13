@@ -1,8 +1,8 @@
-%|
+#|
  |  File: sdl
  |
  |  Provides access to the Simple DirectMedia Layer (https://www.libsdl.org/).
- |%
+ |#
 
 EXPORT NullRect
 EXPORT Event

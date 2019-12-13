@@ -1,4 +1,4 @@
-% SKIP (pops up a window)
+# SKIP (pops up a window)
 IMPORT sdl
 
 sdl.Init(sdl.INIT_VIDEO)
