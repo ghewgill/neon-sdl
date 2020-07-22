@@ -1,0 +1,11 @@
+image: ubuntu/next
+packages:
+- scons
+- libx11-dev
+- libxext-dev
+sources:
+- https://github.com/ghewgill/neon-sdl
+tasks:
+- build: |
+    cd neon-sdl
+    scons

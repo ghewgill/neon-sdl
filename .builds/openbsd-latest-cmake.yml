@@ -1,0 +1,9 @@
+image: openbsd/latest
+packages:
+- scons
+sources:
+- https://github.com/ghewgill/neon-sdl
+tasks:
+- build: |
+    cd neon-sdl
+    scons

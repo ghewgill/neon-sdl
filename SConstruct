@@ -155,7 +155,7 @@ if sys.platform == "win32":
         "SDL2-2.0.3/src/video/windows/SDL_windowswindow.c",
     ])
 else:
-    libsdl = libsdlenv.Command("SDL2-2.0.3/build/.libs/libSDL2.a", "SDL2-2.0.3/configure", "cd lib/sdl/SDL2-2.0.3 && env CFLAGS=-fPIC ./configure && make")
+    libsdl = libsdlenv.Command("SDL2-2.0.3/build/.libs/libSDL2.a", "SDL2-2.0.3/configure", "cd SDL2-2.0.3 && env CFLAGS=-fPIC ./configure && make")
     if sys.platform.startswith("darwin"):
         env.Append(LIBS=["iconv", "objc"])
         env.Append(FRAMEWORKS=["AppKit", "AudioUnit", "Carbon", "CoreAudio", "CoreFoundation", "CoreGraphics", "ForceFeedback", "IOKit"])

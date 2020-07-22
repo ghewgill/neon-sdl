@@ -1,0 +1,12 @@
+image: fedora/latest
+packages:
+- g++
+- scons
+- libX11-devel
+- libXext-devel
+sources:
+- https://github.com/ghewgill/neon-sdl
+tasks:
+- build: |
+    cd neon-sdl
+    scons

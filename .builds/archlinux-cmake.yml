@@ -1,0 +1,11 @@
+image: archlinux
+packages:
+- scons
+- libx11
+- libxext
+sources:
+- https://github.com/ghewgill/neon-sdl
+tasks:
+- build: |
+    cd neon-sdl
+    scons
