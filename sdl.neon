@@ -47,10 +47,10 @@ EXPORT RenderFillRect
 EXPORT RenderPresent
 EXPORT SetRenderDrawColor
 
-TYPE Renderer IS POINTER
-TYPE Surface IS POINTER
-TYPE Texture IS POINTER
-TYPE Window IS POINTER
+TYPE Renderer IS Object
+TYPE Surface IS Object
+TYPE Texture IS Object
+TYPE Window IS Object
 
 TYPE Event IS RECORD
     type: Number
